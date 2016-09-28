@@ -1,4 +1,4 @@
-# node-eddystone-beacon-scanner
+# psw-node-eddystone-beacon-scanner
 
 Scan for [Eddystone beacons](https://github.com/google/eddystone) using Node.js
 
@@ -55,7 +55,7 @@ EddystoneBeaconScanner.on('lost', function(beacon) {
 ```
 
 The ```beacon``` object will have the following properties depending on the frame type:
-##### URL
+##### URL/URL-PSW
 
  * ```type``` - Eddystone type
  * ```txPower``` - Measured received power at 0 m in dBm
@@ -64,7 +64,7 @@ The ```beacon``` object will have the following properties depending on the fram
  * ```rssi``` - RSSI of discovered beacon
  * ```distance``` - Approximate distance from beacon
 
-##### UID
+##### UID/UID-PSW
  * ```type``` - Eddystone type
  * ```txPower``` - Measured received power at 0 m in dBm
  * ```namespace``` - 10-byte ID Namespace
